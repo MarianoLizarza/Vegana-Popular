@@ -1,0 +1,115 @@
+/*Tienda*/
+
+.servicies {
+    background: white;
+    .subtitle--modifier {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .copy-section--modifier {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    .container-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 30%;
+        padding: 30px 0;
+        overflow: hidden;
+        background: linear-gradient(180deg, #60af31 0%, #1ecc61 100%);
+        border-radius: 10px;
+        position: relative;
+        text-align: right;
+        margin-bottom: 60px;
+        box-shadow: 0 0 6px rgb(13, 12, 14);
+    }
+    .card-img {
+        width: 95%;
+        height: 200px;
+        object-fit: scale-down;
+        border-radius: 10px 0 0 10px;
+    }
+    .card-text {
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .card-list {
+        color: teal;
+        font-weight: 700;
+        margin: 25px 0 12px;
+        font-size: 18px;
+    }
+    .card-title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    .card-copy {
+        color: rgb(13, 14, 13);
+        margin-bottom: 16px;
+    }
+    .card-button {
+        display: block;
+        background: linear-gradient(180deg, #59ec8a 0%, #25bd8a 100%);
+        border-radius: 6px;
+        text-decoration: none;
+        width: 100%;
+        color: var(--black1);
+        font-weight: 700;
+        text-align: center;
+        padding: 12px 0;
+    }
+    @media screen and (max-width:960px) {
+        nav {
+            width: 50%;
+            margin-right: 25%;
+        }
+        .card-title {
+            font-size: 30px;
+        }
+    }
+    @media screen and (max-width:700px) {
+        width: auto;
+        height: auto;
+        .card-title {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:500px) {
+        width: auto;
+        height: auto;
+    }
+    @media screen and (max-width:300px) {
+        h2 {
+            font-size: 25px;
+        }
+        .copy-section {
+            font-size: 20px;
+        }
+        .container-cards {
+            align-items: center;
+        }
+        .card-list {
+            font-size: 12px;
+        }
+        .card-title {
+            font-size: 12px;
+        }
+        .card-copy {
+            font-size: 10px;
+        }
+        .card-button {
+            font-size: 15px;
+        }
+        .card-img {
+            height: 70px;
+        }
+    }
+}

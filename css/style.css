@@ -1,0 +1,552 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 900px;
+}
+
+.subtitle {
+  color: chartreuse;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  padding: 30px;
+}
+
+.copy-section {
+  color: #050505;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+/*Header*/
+header {
+  text-align: center;
+  background: url(../img/banner.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  border-radius: 0 0 85% 85%;
+  background-attachment: fixed;
+}
+header .c-header {
+  width: 90%;
+  height: 100%;
+  padding: 50px;
+  color: black;
+  text-shadow: 1px 1px 1px wheat;
+}
+header h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+  font-family: cursive;
+}
+header h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: cursive;
+}
+header p {
+  margin-bottom: 30px;
+  font-family: cursive;
+}
+header li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+  margin-right: 450px;
+}
+header a {
+  text-decoration: none;
+  font-family: fantasy;
+  color: black;
+}
+header li:hover a {
+  color: green;
+}
+@media screen and (max-width: 960px) {
+  header nav {
+    width: 50%;
+    margin-right: 25%;
+  }
+}
+@media screen and (max-width: 700px) {
+  header nav {
+    width: 60%;
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav {
+    width: 90%;
+    margin-right: 2%;
+  }
+  header a {
+    font-size: 15px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 300px) {
+  header nav {
+    width: 100%;
+    margin-right: 10%;
+  }
+  header a {
+    font-size: 10px;
+  }
+  header h1 {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+}
+
+/*Tienda*/
+.servicies {
+  background: white;
+}
+.servicies .subtitle--modifier {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.servicies .copy-section--modifier {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.servicies .container-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.servicies .card {
+  width: 30%;
+  padding: 30px 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #60af31 0%, #1ecc61 100%);
+  border-radius: 10px;
+  position: relative;
+  text-align: right;
+  margin-bottom: 60px;
+  box-shadow: 0 0 6px #0d0c0e;
+}
+.servicies .card-img {
+  width: 95%;
+  height: 200px;
+  object-fit: scale-down;
+  border-radius: 10px 0 0 10px;
+}
+.servicies .card-text {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+}
+.servicies .card-list {
+  color: teal;
+  font-weight: 700;
+  margin: 25px 0 12px;
+  font-size: 18px;
+}
+.servicies .card-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.servicies .card-copy {
+  color: #0d0e0d;
+  margin-bottom: 16px;
+}
+.servicies .card-button {
+  display: block;
+  background: linear-gradient(180deg, #59ec8a 0%, #25bd8a 100%);
+  border-radius: 6px;
+  text-decoration: none;
+  width: 100%;
+  color: var(--black1);
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0;
+}
+@media screen and (max-width: 960px) {
+  .servicies nav {
+    width: 50%;
+    margin-right: 25%;
+  }
+  .servicies .card-title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .servicies {
+    width: auto;
+    height: auto;
+  }
+  .servicies .card-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicies {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  .servicies h2 {
+    font-size: 25px;
+  }
+  .servicies .copy-section {
+    font-size: 20px;
+  }
+  .servicies .container-cards {
+    align-items: center;
+  }
+  .servicies .card-list {
+    font-size: 12px;
+  }
+  .servicies .card-title {
+    font-size: 12px;
+  }
+  .servicies .card-copy {
+    font-size: 10px;
+  }
+  .servicies .card-button {
+    font-size: 15px;
+  }
+  .servicies .card-img {
+    height: 70px;
+  }
+}
+
+/*Productos*/
+.galeria .copy-section {
+  margin-bottom: 20px;
+}
+.galeria h3 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+}
+.galeria .contenedor-imagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+.galeria .contenedor-imagenes .imagen {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+.galeria .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(59, 148, 118, 0.363);
+  width: 100%;
+  height: 0%;
+  transition: 1s;
+  overflow: hidden;
+}
+.galeria .overlay h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.galeria .imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .galeria .contenedor-imagenes {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .galeria .contenedor-imagenes {
+    width: 90%;
+  }
+  .galeria .contenedor-imagenes .imagen {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .galeria h3 {
+    font-size: 22px;
+  }
+  .galeria .contenedor-imagenes {
+    width: 98%;
+  }
+  .galeria .contenedor-imagenes .imagen {
+    width: 80%;
+  }
+  .galeria h2 {
+    font-size: 25px;
+  }
+  .galeria .copy-section {
+    font-size: 20px;
+  }
+  .galeria .contenedor-imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Nosotros*/
+#nosotros {
+  display: flex;
+}
+#nosotros .izquierda {
+  background: rgba(229, 233, 22, 0.527);
+  height: 100vh;
+  width: 50%;
+  text-align: center;
+}
+#nosotros h4 {
+  font-size: 50px;
+  color: black;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 80px;
+  margin-top: 25px;
+}
+#nosotros .creative {
+  font-size: 19px;
+  line-height: 30px;
+  width: 80%;
+  margin: auto;
+  margin-left: 80px;
+  text-align: justify;
+  margin-bottom: 40PX;
+}
+#nosotros .link {
+  margin-left: 50px;
+}
+#nosotros .learn {
+  border: 3px solid black;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 30px;
+}
+#nosotros .derecha {
+  background: url(../img/FotoVale.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 100vh;
+}
+@media screen and (max-width: 960px) {
+  #nosotros .izquierda {
+    width: auto;
+    height: auto;
+  }
+  #nosotros .derecha {
+    width: auto;
+    height: auto;
+  }
+  #nosotros .creative {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #nosotros {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #nosotros {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  #nosotros h4 {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  #nosotros .creative {
+    font-size: 15px;
+    margin-left: auto;
+  }
+  #nosotros .link {
+    margin-bottom: 40px;
+    margin-right: 30px;
+  }
+}
+
+/*Contacto*/
+.form-register {
+  width: 400px;
+  background: linear-gradient(180deg, #60af31 0%, #1ecc61 100%);
+  padding: 30px;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+.form-register h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+}
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-register .botons {
+  width: 100%;
+  background: linear-gradient(180deg, #3e5545 0%, #25bd8a 100%);
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  text-align: center;
+}
+.form-register .controls {
+  width: 100%;
+  background: #ade1e7;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #137b83;
+  font-size: 18px;
+}
+@media screen and (max-width: 960px) {
+  .form-register {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form-register {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-register {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  .form-register {
+    width: 220px;
+    margin: 4%;
+  }
+}
+.form-register h5 {
+  font-size: 20px;
+}
+.form-register p {
+  font-size: 10px;
+}
+.form-register .copy-section {
+  font-size: 15px;
+}
+.form-register .subtitle {
+  font-size: 25px;
+}
+
+.footer {
+  background: #fafafa;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  color: #fff;
+  background: url(../img/banner.jpg);
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.item-contact {
+  width: 25%;
+  padding: 40px 0;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .item-contact {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 300px) {
+  .item-contact {
+    padding: 5px 0;
+  }
+}
+
+.contac-icon {
+  font-size: 14px;
+  color: white;
+  line-height: 20px;
+  margin-right: 4px;
+}
+
+.contact-title {
+  font-size: 16px;
+}
+
+.contact-title1 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
